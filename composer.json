@@ -1,0 +1,29 @@
+{
+    "name": "mr-ajay/localizer",
+    "description": "A laravel package to simplify language translations :)",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MrAjay\\Localizer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MrAjay\\Localizer\\LocalizerServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "ajaydhakal1",
+            "email": "ajaydhakal110@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/dom-crawler": "^6.0",
+        "symfony/css-selector": "^6.0"
+    }
+}
