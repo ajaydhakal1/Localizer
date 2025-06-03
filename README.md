@@ -75,7 +75,24 @@ return [
 
 ### Crawl and Translate All Pages
 
-Run the main Artisan command to crawl all pages specified in config and generate translation files:
+Run the main Artisan command to crawl all pages and generate translation files:
+
+```bash
+php artisan localize:all
+```
+
+This command will:
+
+- Crawl all configured pages asynchronously.
+- Extract visible texts, excluding scripts and styles.
+- Backup and update your Blade files to wrap texts in `{{ __('text') }}` unless already localized.
+- Save English base texts in `resources/lang/en.json`.
+- Translate texts to configured languages and save JSON files in `resources/lang/{lang}.json`.
+
+---
+### Crawl and Translate Specific Pages
+
+Run this Artisan command to crawl specific pages specified in config and generate translation files:
 
 ```bash
 php artisan localize
@@ -83,7 +100,7 @@ php artisan localize
 
 This command will:
 
-- Crawl all configured pages asynchronously.
+- Crawl specific pages asynchronously.
 - Extract visible texts, excluding scripts and styles.
 - Backup and update your Blade files to wrap texts in `{{ __('text') }}` unless already localized.
 - Save English base texts in `resources/lang/en.json`.
