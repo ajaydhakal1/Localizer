@@ -29,7 +29,7 @@ A Laravel package to automatically extract translatable texts from your Blade vi
 ### Require the package via Composer
 
 ```bash
-composer require mrajay/localizer
+composer require mr-ajay/localizer
 ```
 
 ### Publish the config file
@@ -168,7 +168,7 @@ Feel free to check the issues page.
 
 ## Author
 
-Created by **MrAjay** — [GitHub Profile](https://github.com/mrajay)
+Created by **Ajay Dhakal** — [GitHub Profile](https://github.com/ajaydhakal1)
 
 ---
 
